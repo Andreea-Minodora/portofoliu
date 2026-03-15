@@ -35,6 +35,11 @@ Figma
 
 ---
 
+![Finance Dashboard](finance-dashboard/dashboard.png)
+
+Link Figma:
+https://www.figma.com/design/VMr4WsTWh08nTSjh8fvUEd/Finance-SaaS-Dashboard?node-id=3-78&t=zGSwZBYKVUQ1az4L-1
+
 ### Hotel Website (HTML & CSS)
 
 Site web realizat folosind **HTML și CSS** pentru prezentarea unui hotel și realizarea rezervărilor online.
