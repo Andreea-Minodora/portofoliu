@@ -56,6 +56,7 @@ Site web realizat folosind **HTML și CSS** pentru prezentarea unui hotel și re
 HTML, CSS
 
 ---
+![Hotel Website](website-HOTEL/paginaprincipala)
 
 ### Catalog de Note (C# Windows Forms)
 
