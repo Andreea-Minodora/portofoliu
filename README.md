@@ -91,6 +91,10 @@ C#, .NET, Windows Forms, SQL Server
 
 ---
 
+![Catalog de Note](csharp-grade-catalog/pagina_principala)
+![Catalog de Note](csharp-grade-catalog/pagina_dtudenti)
+
+
 ## Autor
 
 Andreea Minodora
