@@ -17,7 +17,7 @@ Power BI, Data Visualization, Exploratory Data Analysis
 
 ---
 
-![Road Accident Dashboard](analiza-accidente-rutiere/dashboard-preview.png)
+![Road Accident Dashboard](analiza-accidente-rutiere/road-accident-analysis-dashboard/dashboard-preview.png)
 
 ### Finance Dashboard UI (Figma)
 
