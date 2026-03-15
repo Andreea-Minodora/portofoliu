@@ -17,6 +17,8 @@ Power BI, Data Visualization, Exploratory Data Analysis
 
 ---
 
+![Road Accident Dashboard](analiza-accidente-rutiere/dashboard-preview.png)
+
 ### Finance Dashboard UI (Figma)
 
 Design de **dashboard financiar** realizat în **Figma**, care prezintă indicatori financiari într-o interfață modernă și intuitivă.
