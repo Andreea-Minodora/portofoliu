@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaugă Recenzie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(background.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Adaugă Recenzie</h2>
+    <form action="submit_review.php" method="POST">
+        <label for="rating">Nota:</label>
+        <select name="rating" required>
+            <option value="5">⭐️⭐️⭐️⭐️⭐️ - Excelent</option>
+            <option value="4">⭐️⭐️⭐️⭐️ - Foarte bun</option>
+            <option value="3">⭐️⭐️⭐️ - Bun</option>
+            <option value="2">⭐️⭐️ - Acceptabil</option>
+            <option value="1">⭐️ - Slab</option>
+        </select>
+
+        <label for="comment">Comentariu:</label>
+        <textarea name="comment" required></textarea>
+
+        <button type="submit">Trimite Recenzie</button>
+    </form>
+</div>
+
+</body>
+</html>  

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Galerie Foto și Meniu</title>
+    <style>
+        /* Stiluri generale */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #b22222;
+        }
+
+        /* Galerie Foto */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 300px;
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Meniu Restaurant */
+        .menu-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b22222;
+        }
+
+        /* Butonul "Mergi la pagina principală" */
+        #buton-pagina-principala {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-pagina-principala {
+            background-color: #757572;
+            color: #000;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-pagina-principala:hover {
+            background-color: #728eda;
+            transform: scale(1.1);
+        }
+
+        /* Butoane "Rezervă" și "Pagina Principală" una lângă alta */
+        #rezervare {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Spațiu între butoane */
+            margin-top: 30px;
+        }
+
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Fundal pentru pagina */
+        .background {
+            background-image: url('restaurant.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Secțiunea Galerie Foto -->
+    <div class="background">
+        <h1>Galerie Foto Restaurant</h1>
+
+        <div class="container">
+            <div class="gallery-item">
+                <img src="restaurant.jpeg" alt="Interior Restaurant">
+                <div class="caption">Interior Restaurant</div>
+            </div>
+            <div class="gallery-item">
+                <img src="r1.jpeg" alt="Mâncare Delicioasă">
+                <div class="caption">Mâncare Delicioasă</div>
+            </div>
+            <div class="gallery-item">
+                <img src="r2.jpeg" alt="Restaurant Exterior">
+                <div class="caption">Restaurant Exterior</div>
+            </div>
+            <div class="gallery-item">
+                <img src="r3.jpeg" alt="Barul Restaurantului">
+                <div class="caption">Barul Restaurantului</div>
+            </div>
+            <div class="gallery-item">
+                <img src="r4.jpeg" alt="Barul Restaurantului">
+                <div class="caption">Barul Restaurantului</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secțiunea Meniu Restaurant -->
+    <div class="menu-section">
+        <h2>Bucătăria Românească</h2>
+        <div class="menu-item"><strong>Gustare țărănească</strong> - Pork crackling paste, bacon, smoked sausages, pork jerky, cheese. <span class="price">$85.0</span></div>
+        <div class="menu-item"><strong>Supă gulaș de vită</strong> - Beef goulash soup. <span class="price">$34.0</span></div>
+        <div class="menu-item"><strong>Carne la garniță</strong> - Cooked pork with polenta. <span class="price">$76.0</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Aperitive</h2>
+        <div class="menu-item"><strong>Tartar de vită</strong> - Beef fillet, shallots, marinated chives. <span class="price">$99.0</span></div>
+        <div class="menu-item"><strong>Caracatiță la grătar</strong> - Grilled octopus, white bean purée. <span class="price">$116.0</span></div>
+        <div class="menu-item"><strong>Hummus cu ciuperci marinate</strong> - Hummus and marinated mushrooms. <span class="price">$33.0</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Supe</h2>
+        <div class="menu-item"><strong>Supă de sparanghel și brânză de capră</strong> - Asparagus and goat's cheese soup. <span class="price">$68.0</span></div>
+        <div class="menu-item"><strong>Supă gulaș de vită</strong> - Beef goulash soup. <span class="price">$34.0</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Feluri principale</h2>
+        <div class="menu-item"><strong>Păstrăv de munte cu salsa verde</strong> - Trout fillet, polenta chips. <span class="price">$98.0</span></div>
+        <div class="menu-item"><strong>Piept de rață glazurat</strong> - Glazed duck breast, raisin purée. <span class="price">$146.0</span></div>
+        <div class="menu-item"><strong>Biban de mare</strong> - Sea bass with tartar sauce. <span class="price">$125.0</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h2>Deserturi</h2>
+        <div class="menu-item"><strong>Green Lava Cake cu fistic</strong> - Pistachio lava cake. <span class="price">$66.0</span></div>
+        <div class="menu-item"><strong>Mere, crumble de alune</strong> - Baked layered apple, hazelnut crumble. <span class="price">$52.0</span></div>
+        <div class="menu-item"><strong>Chocolate mess Chef style</strong> - Dark chocolate mousse, white chocolate. <span class="price">$77.0</span></div>
+    </div>
+
+    <!-- Butoane aliniate una lângă alta -->
+    <div id="rezervare">
+        <a href="site.html" class="btn-pagina-principala">Mergi la pagina principală</a>
+        <a href="rezervare.html" class="btn">Rezervă o masa.</a>
+    </div>
+
+</body>
+</html>

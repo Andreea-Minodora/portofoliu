@@ -1,0 +1,84 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover; /* Face imaginea să acopere întreaga pagină */
+    background-position: center center; /* Centrează imaginea */
+    background-attachment: fixed; /* Imaginea rămâne fixă în fundal atunci când derulezi */
+    background-repeat: no-repeat; /* Evită repetarea imaginii */
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.room-info {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.room-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.room-info strong {
+    font-weight: bold;
+}
+
+#buton-pagina-principala {
+    text-align: center; /* Centrarea butonului */
+    margin-top: 30px;
+}
+
+.btn-pagina-principala {
+    background-color: #757572; /* Culoare de fundal galbenă pentru buton */
+    color: #000; /* Culoare text negru */
+    font-size: 18px; /* Dimensiunea textului */
+    padding: 15px 30px; /* Margini interioare pentru buton */
+    border: none;
+    border-radius: 8px; /* Colțuri rotunjite */
+    text-decoration: none; /* Elimină sublinierea */
+    display: inline-block; /* Permite dimensionarea corectă */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animare la hover */
+}
+
+.btn-pagina-principala:hover {
+    background-color: #728eda; /* Schimbă culoarea la hover */
+    transform: scale(1.1); /* Mărește butonul puțin la hover */
+}

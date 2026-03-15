@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervare Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* Overlay pentru îmbunătățirea vizibilității textului pe fundal */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent negru */
+            z-index: -1; /* Pune overlay-ul în spatele conținutului */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #b22222;
+        }
+
+        .rezervari-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Fundal alb semi-transparent pentru contrast */
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rezervari-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .rezervari-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rezervari-form input, .rezervari-form select, .rezervari-form textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .rezervari-form button {
+            background-color: #27ae60;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .rezervari-form button:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Butonul de rezervare aliniat la centru */
+        .btn-rezervare {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Butonul principal pentru întoarcerea la pagina principală */
+        .btn-pagina-principala {
+            display: inline-block;
+            background-color: #757572;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-pagina-principala:hover {
+            background-color: #728eda;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Secțiunea Rezervări Hotel -->
+    <div class="rezervari-section">
+        <h1>Rezervă un sejur la hotel</h1>
+        <h2>Completează formularul pentru a-ți rezerva sejurul!</h2>
+        <form class="rezervari-form" action="rezervare_procesor.php" method="POST">
+            <label for="nume">Nume complet:</label>
+            <input type="text" id="nume" name="nume" required placeholder="Introdu numele tău">
+
+            <label for="email">Adresă de email:</label>
+            <input type="email" id="email" name="email" required placeholder="Introdu adresa ta de email">
+
+            <label for="data_check_in">Data de check-in:</label>
+            <input type="date" id="data_check_in" name="data_check_in" required>
+
+            <label for="data_check_out">Data de check-out:</label>
+            <input type="date" id="data_check_out" name="data_check_out" required>
+
+            <label for="numar_persoane">Număr de persoane:</label>
+            <select id="numar_persoane" name="numar_persoane" required>
+                <option value="1">1 persoană</option>
+                <option value="2">2 persoane</option>
+                <option value="3">3 persoane</option>
+                <option value="4">4 persoane</option>
+                <option value="5">5 persoane</option>
+                <option value="6">6+ persoane</option>
+            </select>
+
+            <label for="tip_camera">Tip de cameră:</label>
+            <select id="tip_camera" name="tip_camera" required>
+                <option value="single">Single - 150 RON/noapte</option>
+                <option value="dubla_standard">Dublă Standard - 250 RON/noapte</option>
+                <option value="dubla_premium">Dublă Premium - 400 RON/noapte</option>
+                <option value="apartament">Apartament - 600 RON/noapte</option>
+            </select>
+
+            <label for="preferinte">Alte preferințe sau cerințe speciale:</label>
+            <textarea id="preferinte" name="preferinte" rows="4" placeholder="Scrie preferințele tale (opțional)"></textarea>
+
+            <button type="submit">Rezervă acum</button>
+        </form>
+    </div>
+
+    <!-- Butonul pentru întoarcerea pe pagina principală -->
+    <div class="btn-rezervare">
+        <a href="site.html" class="btn-pagina-principala">Mergi la pagina principală</a>
+    </div>
+    <form class="rezervari-form" action="rezervare_procesor.php" method="POST">
+
+</body>
+</html>
+<script>
+    // Funcție de validare a formularului
+    document.querySelector('form').addEventListener('submit', function(event) {
+        var numarPersoane = document.getElementById('numar_persoane').value;
+        var tipCamera = document.getElementById('tip_camera').value;
+
+        // Condiții de validare
+        if (numarPersoane > 3 && tipCamera == 'single') {
+            alert("Nu poți rezerva o cameră Single pentru mai mult de 3 persoane.");
+            event.preventDefault(); // Oprește trimiterea formularului
+        } else if (numarPersoane > 4 && tipCamera == 'dubla_standard') {
+            alert("Nu poți rezerva o cameră Dublă Standard pentru mai mult de 4 persoane.");
+            event.preventDefault(); // Oprește trimiterea formularului
+        } else if (numarPersoane > 6 && tipCamera == 'dubla_premium') {
+            alert("Nu poți rezerva o cameră Dublă Premium pentru mai mult de 6 persoane.");
+            event.preventDefault(); // Oprește trimiterea formularului
+        }
+    });
+</script>
+

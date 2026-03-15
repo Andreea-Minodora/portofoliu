@@ -1,0 +1,467 @@
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Folosim fontul importat */
+    background-image: url(background.jpg); 
+    background-attachment: fixed; /* Imaginea rămâne fixă la derulare */
+    background-size: cover; /* Imaginea se întinde pentru a acoperi întreaga pagină */
+    background-position: center center; /* Centrează imaginea pe pagină */
+}
+
+.room-info {
+    scroll-margin-top: 100px; /* Ajustează această valoare dacă navbar-ul tău este mai mare */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fundal semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Definirea imaginii de fundal */
+
+
+
+#total {
+    width: 100%;
+    height: 100%; /* Ocupă întreaga înălțime a paginii */
+    
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent */
+    z-index: -1; /* Plasează acest strat sub conținut */
+}
+
+/* Crearea unui strat semitransparent deasupra imaginii */
+
+
+/* Stilizare meniul */
+#meniu {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Adaugă transparență și la meniu */
+    color: white;
+    padding: 15px 0;
+    z-index: 1; /* Meniul va fi deasupra imaginii */
+    border-radius: 10px;
+}
+
+#meniu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#meniu li {
+    margin-right: 30px; /* Spațiere între elementele meniului */
+}
+
+/* Stilizare lista meniului */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #c8db84;
+}
+
+/* Titluri */
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 2.5em; /* Ajustăm dimensiunea fontului */
+}
+
+/* Stilizarea secțiunii CAMERE SI APARTAMENTE */
+#INFO {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    color: rgb(92, 88, 88);
+}
+
+#INFO h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #f3f5f7;
+}
+/* Stilizare generală */
+#camere {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adaugă un spațiu între elemente */
+    justify-content: center; /* Aliniază camerele în centrul paginii */
+}
+
+.detalii {
+    max-width: 300px; /* Limitează lățimea textului */
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal transparent alb */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detalii h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.detalii p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.detalii .pret {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #607181;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #3498db;
+    color: rgb(63, 61, 61);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button.btn-secundar {
+    background-color: #7f8c8d;
+}
+
+button.btn-secundar:hover {
+    background-color: #95a5a6;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsivitate */
+@media screen and (max-width: 768px) {
+    #camere {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Flexbox pentru camere */
+#camere {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#camere img {
+    width: 100%;
+    max-width: 250px; /* Limităm lățimea imaginilor */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.detalii {
+    margin-top: 10px;
+}
+
+.pret {
+    font-size: 1.2em;
+    color: green;
+}
+
+
+/* Secțiunea Despre noi */
+#despre-noi {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#despre-noi img {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Stilizare formular rezervare */
+#rezervare-formular {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal semi-transparent */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#rezervare-formular h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#rezervare-formular form input,
+#rezervare-formular form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#rezervare-formular form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rezervare-formular form button:hover {
+    background-color: #2ecc71;
+}
+/* Secțiunea butonului de rezervare */
+#rezervare {
+    display: flex;
+    justify-content: center;  /* Aliniază butonul pe orizontală */
+    align-items: center;      /* Aliniază butonul pe verticală */
+    height: 100vh;            /* Face ca secțiunea să ocupe întreaga înălțime a paginii */
+    text-align: center;       /* Asigură că textul este centrat */
+}
+
+#rezervare .btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#rezervare .btn:hover {
+    background-color: #2ecc71;  /* Efect hover pentru buton */
+}
+
+/* Stilizare pentru butoanele principale */
+.btn {
+    background-color: #007bff; /* Albastru închis */
+    color: white;              /* Text alb */
+    font-size: 16px;           /* Dimensiunea textului */
+    padding: 12px 25px;        /* Spațiu interior pentru buton */
+    text-align: center;        /* Centrarea textului */
+    text-decoration: none;     /* Elimină sublinierea textului */
+    border-radius: 5px;        /* Colțuri rotunjite */
+    display: inline-block;     /* Permite să fie vizualizat ca un element de bloc în linie */
+    transition: background-color 0.3s, transform 0.3s; /* Tranziție pentru schimbarea culorii și animații */
+    cursor: pointer;          /* Cursorul devine pointer când treci cu mouse-ul */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Culoare mai închisă când butonul este hover */
+    transform: scale(1.05);    /* Mărirea butonului când este hover */
+}
+
+.btn:active {
+    background-color: #004085; /* Culoare și mai închisă când butonul este apăsat */
+    transform: scale(0.98);    /* Micșorarea butonului la apăsare */
+}
+
+.btn a {
+    color: white; /* Asigură că textul rămâne alb în interiorul link-ului */
+    text-decoration: none; /* Elimină sublinierea pe link */
+}
+
+.btn-secundar {
+    background-color: #6c757d; /* Culoare gri pentru butoanele secundare */
+}
+
+.btn-secundar:hover {
+    background-color: #5a6268; /* Culoare gri mai închisă la hover */
+}
+
+
+/* Stilizare pentru secțiunea Cum ajungi */
+#cum-ajungi {
+    background-color: #f9f9f9; /* Fundal deschis */
+    padding: 40px;
+    margin-top: 30px;
+    color: #333;
+    border-radius: 10px;
+}
+
+#cum-ajungi h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cum-ajungi h3 {
+    font-size: 2em;
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+#cum-ajungi h4 {
+    font-size: 1.5em;
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+#cum-ajungi p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+/* Secțiunea "Cum ajungi" */
+#cum-ajungi {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.6); /* Fundal transparent */
+    text-align: left;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Stilizare pentru fiecare opțiune de transport */
+.transport-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Imaginile pentru transport (mașină, autobuz, tren etc.) */
+.transport-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; /* Spațiu între imagine și text */
+}
+
+/* Titluri H4 pentru fiecare mod de transport */
+h4 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Paragrafele pentru fiecare detaliu de transport */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Alinierea și stilizarea pentru titluri h2, h3 */
+h2, h3 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Spunem că fundalul este transparent */
+#cum-ajungi {
+    background-color: rgba(255, 255, 255, 0.8); /* Opțional: Poți ajusta transparența după preferințe */
+}
+
+/* Stilizare pentru hover pe imagini (pentru un efect subtil de interacțiune) */
+.transport-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* Stilizare pentru secțiunea Harta */
+#harta {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fundal deschis pentru a diferenția secțiunea */
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#harta h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Container pentru harta */
+.harta-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Stilizare pentru butoanele de social media */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-button:hover {
+    background-color: #2980b9; /* Culoare pentru hover */
+}
+
+.facebook:hover {
+    background-color: #3b5998; /* Culoare pentru Facebook */
+}
+
+.instagram:hover {
+    background-color: #e4405f; /* Culoare pentru Instagram */
+}
+
+.whatsapp:hover {
+    background-color: #25d366; /* Culoare pentru WhatsApp */
+} 
