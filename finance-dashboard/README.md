@@ -43,6 +43,9 @@ Acest proiect a fost realizat pentru a exersa **designul de interfețe pentru da
 
 ---
 
+
+Link Figma:
+https://www.figma.com/design/VMr4WsTWh08nTSjh8fvUEd/Finance-SaaS-Dashboard?node-id=3-78&t=zGSwZBYKVUQ1az4L-1
 ## Autor
 
 Andreea
