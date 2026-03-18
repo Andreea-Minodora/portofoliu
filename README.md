@@ -95,38 +95,37 @@ C#, .NET, Windows Forms, SQL Server
 ![Catalog de Note](csharp-grade-catalog/pagina_studenti)
 ## SQL Online Store Analysis
 
-Primul meu proiect SQL realizat folosind PostgreSQL. Proiectul modelează o bază de date pentru un magazin online și include mai multe analize SQL.
+Primul meu proiect SQL realizat folosind **PostgreSQL**.  
+Proiectul modelează o bază de date pentru un magazin online și include mai multe analize SQL.
 
-Funcționalități:
+**Funcționalități:**
 - crearea unei baze de date relaționale
-- relații între tabele folosind foreign keys
+- relații între tabele folosind **foreign keys**
 - interogări SQL pentru analiza vânzărilor
 - calcularea valorii comenzilor
 - identificarea clientului care a cheltuit cel mai mult
 - top produse după vânzări
 
-Tehnologii:
+**Tehnologii:**
 - SQL
 - PostgreSQL
+
+
 ## SQL Student Performance Analysis
 
 Proiect SQL pentru analiza performanței academice a studenților.
 
-Analize realizate:
+**Analize realizate:**
+- media fiecărui student
+- studentul cu cea mai mare medie
+- numărul de studenți pe fiecare curs
+- top studenți după performanță
+- cursurile cu media peste 8
+- studenți fără note
 
-media fiecărui student
-
-studentul cu cea mai mare medie
-
-numărul de studenți pe fiecare curs
-
-top studenți după performanță
-
-Tehnologii:
-
-SQL
-
-PostgreSQL
+**Tehnologii:**
+- SQL
+- PostgreSQL
 ## Autor
 
 Andreea Minodora
