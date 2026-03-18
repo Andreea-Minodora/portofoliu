@@ -93,7 +93,21 @@ C#, .NET, Windows Forms, SQL Server
 
 ![Catalog de Note](csharp-grade-catalog/fereastra_principala)
 ![Catalog de Note](csharp-grade-catalog/pagina_studenti)
+## SQL Online Store Analysis
 
+Primul meu proiect SQL realizat folosind PostgreSQL. Proiectul modelează o bază de date pentru un magazin online și include mai multe analize SQL.
+
+Funcționalități:
+- crearea unei baze de date relaționale
+- relații între tabele folosind foreign keys
+- interogări SQL pentru analiza vânzărilor
+- calcularea valorii comenzilor
+- identificarea clientului care a cheltuit cel mai mult
+- top produse după vânzări
+
+Tehnologii:
+- SQL
+- PostgreSQL
 
 ## Autor
 
