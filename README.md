@@ -108,7 +108,25 @@ Funcționalități:
 Tehnologii:
 - SQL
 - PostgreSQL
+## SQL Student Performance Analysis
 
+Proiect SQL pentru analiza performanței academice a studenților.
+
+Analize realizate:
+
+media fiecărui student
+
+studentul cu cea mai mare medie
+
+numărul de studenți pe fiecare curs
+
+top studenți după performanță
+
+Tehnologii:
+
+SQL
+
+PostgreSQL
 ## Autor
 
 Andreea Minodora
