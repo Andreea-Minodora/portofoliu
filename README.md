@@ -126,6 +126,22 @@ Proiect SQL pentru analiza performanței academice a studenților.
 **Tehnologii:**
 - SQL
 - PostgreSQL
+
+## SQL Sales Analysis
+
+Proiect SQL pentru analiza datelor de vânzări într-un magazin online.
+
+Analize realizate:
+- calcularea venitului total al magazinului
+- vânzări pe produs
+- identificarea clienților care au cheltuit cel mai mult
+- vânzări pe categorii de produse
+- calcularea valorii fiecărei comenzi
+- media valorii comenzilor (folosind subquery)
+
+Tehnologii:
+- SQL
+- PostgreSQL
 ## Autor
 
 Andreea Minodora
