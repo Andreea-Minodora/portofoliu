@@ -142,6 +142,58 @@ Analize realizate:
 Tehnologii:
 - SQL
 - PostgreSQL
+
+- # 📊 Sales Dashboard – Python Project
+
+## 🚀 Despre proiect
+
+Acesta este primul meu proiect de analiză de date realizat în Python.
+Am construit un dashboard interactiv care analizează date de vânzări și oferă insight-uri relevante despre performanța business-ului.
+
+---
+
+## 🎯 Funcționalități principale
+
+* 📈 Total Revenue
+* 🧮 Average Order Value
+* 📦 Număr total de comenzi
+* 🏆 Top produse
+* 👥 Top clienți
+* 🔍 Filtru interactiv pe categorie
+
+---
+
+## 🛠️ Tehnologii
+
+* Python
+* Pandas
+* Streamlit
+
+---
+
+## ⚡ Demo local
+
+```bash
+python -m streamlit run dashboard.py
+```
+
+---
+
+## 🧠 Ce am învățat
+
+* lucrul cu date în Pandas (groupby, sum, mean, nunique)
+* transformarea logicii SQL în Python
+* construirea unui dashboard interactiv
+* organizarea unui proiect de tip data analysis
+
+---
+
+## 📌 Despre acest proiect
+
+Acest proiect marchează începutul meu în zona de Data Analysis cu Python și va fi îmbunătățit pe viitor cu funcționalități și vizualizări mai avansate.
+
+---
+
 ## Autor
 
 Andreea Minodora
