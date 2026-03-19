@@ -1,0 +1,7 @@
+order_id,product_name,category,price,quantity,customer_name,date
+1,Laptop,Electronics,3000,1,John,2024-01-01
+2,Mouse,Electronics,50,2,Alice,2024-01-02
+3,Keyboard,Electronics,150,1,Bob,2024-01-03
+4,Chair,Furniture,500,1,John,2024-01-04
+5,Desk,Furniture,1000,1,Alice,2024-01-05
+6,Mouse,Electronics,50,3,Bob,2024-01-06
