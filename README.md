@@ -194,6 +194,8 @@ Acest proiect marchează începutul meu în zona de Data Analysis cu Python și 
 
 ---
 
+![Python Dashboard](python-sales-analysis/image.png)
+
 ## Autor
 
 Andreea Minodora
