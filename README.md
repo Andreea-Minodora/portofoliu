@@ -29,6 +29,8 @@ Dashboard interactiv realizat în **Python** folosind **Pandas și Streamlit** p
 Python, Pandas, Streamlit
 
 ---
+📎 Vezi proiectul:  
+
 ## 📊 Student Grades Dashboard (Python)
 
 Dashboard interactiv realizat în Python pentru analiza notelor studenților.
