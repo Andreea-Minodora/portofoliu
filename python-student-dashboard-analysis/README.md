@@ -45,10 +45,7 @@ python -m streamlit run dashboard.py
 ---
 
 ## 📸 Dashboard Preview
-
 ![Dashboard](python-student-dashboard-analysis/image.png)
-(python-student-dashboard-analysis/image.png)
-
 ---
 
 ## 🧠 Ce am învățat
