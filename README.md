@@ -46,12 +46,12 @@ Dashboard interactiv realizat în Python pentru analiza notelor studenților.
 * Pandas
 * Streamlit
 
-📎 Vezi proiectul:
-https://github.com/Andreea-Minodora/student-dashboard
+📎 Vezi proiectul:  
+https://github.com/Andreea-Minodora/portofoliu/tree/main/python-student-dashboard-analysis
 
 ---
 
-![Student Dashboard](python-student=dashboard=analysys/image.png)
+![Student Dashboard](python-student-dashboard-analysis/image.png)
 
 ## 📈 Road Accident Analysis Dashboard (Power BI)
 
