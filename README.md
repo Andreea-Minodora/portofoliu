@@ -29,6 +29,29 @@ Dashboard interactiv realizat în **Python** folosind **Pandas și Streamlit** p
 Python, Pandas, Streamlit
 
 ---
+## 📊 Student Grades Dashboard (Python)
+
+Dashboard interactiv realizat în Python pentru analiza notelor studenților.
+
+**Funcționalități:**
+
+* calcularea mediei notelor
+* filtrare după curs
+* grafic pentru media pe student
+* identificarea celui mai bun student
+
+**Tehnologii:**
+
+* Python
+* Pandas
+* Streamlit
+
+📎 Vezi proiectul:
+https://github.com/Andreea-Minodora/student-dashboard
+
+---
+
+![Student Dashboard](python-student=dashboard=analysys/image.png)
 
 ## 📈 Road Accident Analysis Dashboard (Power BI)
 
