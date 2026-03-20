@@ -32,7 +32,7 @@ Scopul proiectului este de a explora datele și de a obține insight-uri relevan
 
 * `students.csv` – dataset
 * `dashboard.py` – aplicația Streamlit
-* `(python-students-dashboard-analysys/image.png` – screenshot dashboard
+* `(python-student-dashboard-analysys/image.png` – screenshot dashboard
 
 ---
 
@@ -46,7 +46,7 @@ python -m streamlit run dashboard.py
 
 ## 📸 Dashboard Preview
 
-![Dashboard](python-students-dashboard-analysys/image.png)
+![Dashboard](python-student-dashboard-analysys/image.png)
 
 ---
 
