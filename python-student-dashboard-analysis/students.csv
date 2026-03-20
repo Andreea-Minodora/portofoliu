@@ -1,0 +1,13 @@
+student_id,student_name,course,grade,date
+1,Ana,Math,9,2024-01-10
+2,Andrei,Math,7,2024-01-10
+3,Maria,Math,10,2024-01-10
+1,Ana,Physics,8,2024-01-11
+2,Andrei,Physics,6,2024-01-11
+3,Maria,Physics,9,2024-01-11
+1,Ana,Informatics,10,2024-01-12
+2,Andrei,Informatics,8,2024-01-12
+3,Maria,Informatics,9,2024-01-12
+4,Ioana,Math,8,2024-01-10
+4,Ioana,Physics,7,2024-01-11
+4,Ioana,Informatics,9,2024-01-12
