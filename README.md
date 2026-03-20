@@ -30,6 +30,7 @@ Python, Pandas, Streamlit
 
 ---
 📎 Vezi proiectul:  
+https://github.com/Andreea-Minodora/portofoliu/tree/main/python-sales-dashboard
 
 ## 📊 Student Grades Dashboard (Python)
 
