@@ -81,6 +81,9 @@ Logica programului combină:
 
 ## 📷 
 
+## 📷 Imagine robot
+
+![Robot](robot.jpeg)
 
 
 ---
