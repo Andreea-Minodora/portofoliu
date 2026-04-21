@@ -84,7 +84,9 @@ Logica programului combină:
 ## 📷 Imagine robot
 
 ![Robot](robot.jpeg)
+## 🎥 Demonstrație
 
+[![Video robot](demo.mp4).
 
 ---
 
