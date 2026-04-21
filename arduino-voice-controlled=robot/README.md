@@ -86,7 +86,7 @@ Logica programului combină:
 ![Robot](robot.jpeg)
 ## 🎥 Demonstrație
 
-[![Video robot](demo.mp4).
+[![Video robot](demo.mp4)
 
 ---
 
